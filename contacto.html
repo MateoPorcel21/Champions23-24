@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Champions League 2023-2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="multimedia/logo.jpg" type="image/png">
+    <style>
+        /* Estilos específicos para el cuerpo de la página */
+        body {
+            background-image: url('multimedia/logo.jpg'); /* Ruta a tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff; /* Texto blanco sobre fondo oscuro */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Sombra para mejorar legibilidad del texto */
+            height: 100%; /* Para que el pie de página se mantenga al final */
+            padding-top: 60px;
+        }
+        .form-container, .social-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 50px;
+        }
+        .news-sidebar {
+            position: fixed;
+            top: 70px;
+            right: 0;
+            width: 300px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 30px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            height: 100%;
+            overflow-y: auto;
+        }
+        .news-sidebar h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .news-item {
+            margin-bottom: 20px;
+        }
+        .news-item a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="multimedia/logo.jpg" alt="Champions League 23-24" width="50" height="50">
+                Champions League
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 pt-5">
+        <div class="form-container">
+            <h1 class="text-center">Envíanos tu opinión</h1>
+            <form id="form" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" class="form-control" name="from_name" id="from_name" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu nombre.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor ingresa un mensaje.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email_id">Correo Electrónico</label>
+                    <input type="email" class="form-control" name="email_id" id="email_id" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa un correo electrónico válido.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="button">Enviar Correo</button>
+            </form>
+        </div>
+        
+        <div class="social-container">
+            <h2 class="text-center">Síguenos en</h2>
+            <div class="d-flex justify-content-around">
+                <a href="https://www.facebook.com/uefachampionsleague" target="_blank">
+                    <img src="multimedia/face.png" alt="Facebook" class="img-fluid" style="width: 50px;">
+                </a>
+                <a href="https://www.instagram.com/championsleague" target="_blank">
+                    <img src="multimedia/insta.png" alt="Instagram" class="img-fluid" style="width: 50px;">
+                </a>
+                <a href="https://x.com/ChampionsLeague" target="_blank">
+                    <img src="multimedia/x.png" alt="X" class="img-fluid" style="width: 50px;">
+                </a>
+                <a href="https://www.uefa.com/uefachampionsleague/" target="_blank">
+                    <img src="multimedia/uefa.png" alt="UEFA" class="img-fluid" style="width: 50px;">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="news-sidebar">
+        <h2>Noticias Actuales</h2>
+        <div class="news-item">
+            <a href="https://www.uefa.com/uefachampionsleague/news/0287-1964e2059d4f-26d153ee1f3b-1000--uefa-champions-league-2024-25-jogos-final-datas-importantes/" target="_blank">El nuevo formato</a>
+            <p>Fechas, horarios y explicación</p>
+        </div>
+        <div class="news-item">
+            <a href="https://www.uefa.com/uefachampionsleague/news/028b-1a4e4330ab95-7ce9a2fc709a-1000--champions-league-2024-25-quem-esta-apurado-directamente-para/" target="_blank">Fase de Liga 24-25</a>
+            <p>¿Qué equipos ya están clasificados?</p>
+        </div>
+        <div class="news-item">
+            <a href="https://www.uefa.com/uefachampionsleague/news/028e-1b0db1368ce2-9415fa67ada3-1000--in-the-zone-como-o-real-madrid-passou-de-menos-a-mais-fre/" target="_blank">¿Cómo ganó la final el Madrid?</a>
+            <p>Revive la final</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Champions League. Todos los derechos reservados.</p>
+    </footer>
+    <div class="moving-text">
+        <span>Champions League 23-24 Champions League 23-24 Champions League 23-24</span>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('sExUxL4arKNi4Hg8g')
+    </script>
+    <script src="form.js"></script>
+    <script>
+        // Validación de Bootstrap
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {s
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>
